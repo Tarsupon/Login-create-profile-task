@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form action="" class="main-container">
+        <h3>LOGIN</h3>
+        <div class="textbox-container">
+            <input type="text"
+                name=""
+                id=""
+                class="textbox"
+                required
+                placeholder="username"
+                pattern = "[A-Za-z0-9]{6,}"
+                title = "Login can not be shorter than six Latin symbols."
+                >
+            <input type="password"
+                name=""
+                id=""
+                class="textbox"
+                required
+                placeholder="password"
+                pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title = "The password can not be shorter than eight symbols and must contain at least one number, one small and one large Latin letter."
+                >
+        <input type="submit"
+               value="Send"
+               class="submit-button"
+               >
+        </div>
+        <a class="create-profile-link" href="../createProfile/index.html">Сreate profile</a>
+    </form>
+</body>
+</html>

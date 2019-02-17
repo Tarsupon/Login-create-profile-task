@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="main-container" action="" method="post" name="contact_form">
+        <h4><b>CREATE PROFILE</b></h4>
+        <div class="info-container">
+            <div class="info-photo">
+                <img src="" alt="">
+                <input type="file" name="photo" accept="image/*,image/jpeg" class="photo-button">
+            </div>
+            <div class="info-text">
+                <input class="textbox"
+                       type="text"
+                       placeholder="John"
+                       maxlength="20"
+                       minlength="2"
+                       required
+                       pattern="^[a-zA-Z]+$"
+                       title="This field should includes min 2 Latin letters">
+                <input class="textbox"
+                       type="text"
+                       placeholder="Doe"
+                       maxlength="20"
+                       minlength="2"
+                       required
+                       pattern="^[a-zA-Z]+$"
+                       title="This field should includes min 2 Latin letters">
+                <input class="textbox"
+                       type="tel"
+                       placeholder="XXXXXXXXXXXX"
+                       maxlength="12"
+                       minlength="12"
+                       required
+                       pattern="[0-9]{12}"
+                       title="It's should be like 37500000000">
+            </div>
+        </div>
+        <input type="submit" class="submit-button" value="Send">
+    </form>
+</body>
+</html>
